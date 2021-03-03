@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  display: flex;
+}
+.radio-buttons {
+  display: none;
+}
+.light {
+  width: 30px;
+  height: 30px;
+  background: #f4cd8d;
+}
+.dark {
+  width: 30px;
+  height: 30px;
+  background: #745853;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 30px);
+  overflow: hidden;
+}
+input:checked + label {
+  background: #ff0000;
+  box-shadow: -30px -60px 0 0 #0000ff, -60px -30px 0 0 #0000ff, 30px -60px 0 0 #0000ff,
+    60px -30px 0 0 #0000ff, -30px 60px 0 0 #0000ff, -60px 30px 0 0 #0000ff, 30px 60px 0 0 #0000ff,
+    60px 30px 0 0 #0000ff;
+  position: relative;
+}
